@@ -10,7 +10,7 @@ import re
 if __name__ == '__main__':
     pass
     inpt_pass = input ('Введите пароль: ')
-    if str.isalnum() in inpt_pass:
+    if len(inpt_pass) >= 8:
         print('Сложный пароль')
     else:
         print('Простой пароль')
