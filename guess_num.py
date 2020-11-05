@@ -16,3 +16,21 @@
 
 if __name__ == '__main__':
     pass
+import random
+number = random.randint(0, 1_000_000)
+while True:
+    answer = input('Угадай число ')
+    if not answer or answer == 'exit':
+        break
+    if not answer.isdigit():
+        print('ВВедите число')
+    elif int(answer) > 1_000_000:
+        print('Введите число до 1000000')
+        continue
+    if int(answer) > number:
+        print('Загаданое число меньше')
+    elif int(answer) < number:
+        print('Загаданое число больше')
+    else:
+        print('Правильно! Ты угадал')
+        break
