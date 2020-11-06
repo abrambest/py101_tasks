@@ -10,3 +10,12 @@
 
 if __name__ == '__main__':
     pass
+for x in range(1, 101):
+    if x % 3 == 0 and x % 5 == 0:
+        print("zip-zap", end=' ')
+    elif x % 3 == 0:
+        print("zip", end=' ')
+    elif x % 5 == 0:
+        print("zap", end=' ')
+    else:
+        print(x, end=' ')
